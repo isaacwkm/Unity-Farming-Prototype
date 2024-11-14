@@ -1,11 +1,11 @@
 # Devlog Entry - 11/14/2024
 
 ## Introducing the Team
-Issac Kim - 
-Nolan Jensen - 
-Kellum Inglin - 
-Steven Hernandez - 
-Garrett Yu - Tools Lead
+Issac Kim - Engine Lead </br>
+Nolan Jensen - </br>
+Kellum Inglin - Tools Lead Backup </br>
+Steven Hernandez - </br>
+Garrett Yu - Tools Lead </br>
 
 ## Tools and Materials
 

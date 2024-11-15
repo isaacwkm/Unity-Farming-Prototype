@@ -2,26 +2,34 @@
 
 ## Introducing the Team
 Issac Kim - Engine Lead </br>
-Nolan Jensen - Design Lead </br>
-Steven Hernandez - Design Lead </br>
-Garrett Yu - Tools Lead </br>
-Kellum Inglin - Tools Lead </br>
+Nolan Jensen - Design Co-Lead </br>
+Steven Hernandez - Design Co-Lead </br>
+Garrett Yu - Tools Co-Lead </br>
+Kellum Inglin - Tools Co-Lead </br>
 
 ## Tools and Materials
 In regards to the engines we plan on using, we chose Unity as our initial engine based off
-the team's relative familiarity with it. We then plan to switch over to Godot based on its
-similarity to Unity. Both engines are compatible with C# as the primary programming language, 
-to which we intend to write our game in as being the default language in our first engine. 
-It would also be useful to gain additional experience in both engines as they represent more 
-commonly used engines for game development compared to the likes of Phaser.
+the team's relative familiarity with it. We also found that it would be useful to gain additional 
+experience in a game engine used typically in modern game development compared to the likes of Phaser.
+We were also interested in making the game 3D, which other older game engines may be uncapable of doing,
+whereas Unity is one of a few engines that is perfect for that. We plan to use placeholder assets from
+within Unity, though we are interested in making our own if possible to add flair to the game.
 
-We intend on using C# as our primary programming language due to its support in both
-engines we plan on using as well as being the default language in our first engine.
+We intend on using C# as our primary programming language due it being the default language 
+in Unity. Unity also features a multitude of scripting opportunities so we intend to use them to
+their fullest extent to execute our game. We may need to convert our game objects to JSON, so that
+is something we may need to consider as an additional data language to help our process.
 
 For tools, we plan on using VSCode for our IDE with Git version control. Again, these were
 chosen largely based on team familiarity alongside their ease of integration with our chosen
-engines. Furthermore, as we have one team member who has experience in 3D modeling, we intend
-to use an appropriate editor for that.
+engines. Issues regarding merge conflicts would also likely be kept to a minimum since Unity 
+is object-based in terms of its coding. We also have one team member who has experience in 3D 
+modeling, so we'll likely use the appropriate software needed for that, such as Blender and Substance Painter.
+
+Our alternative platform that we intend to use is Godot. Our main reason being that the engine is
+similar to Unity and is also based in C#. This would allow us to easily transfer our game from one engine
+to another when we need to make the switch. In terms of recreating the essential objects required for the
+game, the similarities in engines should play to our advantage and hopefully shouldn't deter the process.
 
 ## Outlook
 

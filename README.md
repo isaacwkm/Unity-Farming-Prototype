@@ -10,8 +10,10 @@ Kellum Inglin - Tools Lead </br>
 ## Tools and Materials
 In regards to the engines we plan on using, we chose Unity as our initial engine based off
 the team's relative familiarity with it. We then plan to switch over to Godot based on its
-similarity to Unity. It would also be useful to gain experience in both engines as they
-represent more commonly used engines for game development.
+similarity to Unity. Both engines are compatible with C# as the primary programming language, 
+to which we intend to write our game in as being the default language in our first engine. 
+It would also be useful to gain additional experience in both engines as they represent more 
+commonly used engines for game development compared to the likes of Phaser.
 
 We intend on using C# as our primary programming language due to its support in both
 engines we plan on using as well as being the default language in our first engine.
@@ -28,3 +30,4 @@ in regards to building and deploying software from scratch, especially since up 
 we've mainly been given the appropriate frameworks to begin with. We anticipate the hardest
 parts of this project to be time management and communicating clearly on what each of us is
 developing.
+

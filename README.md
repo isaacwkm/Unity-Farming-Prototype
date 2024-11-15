@@ -3,9 +3,9 @@
 ## Introducing the Team
 Issac Kim - Engine Lead </br>
 Nolan Jensen - Design Lead </br>
-Kellum Inglin - Tools Lead Backup </br>
-Steven Hernandez - </br>
+Steven Hernandez - Design Lead </br>
 Garrett Yu - Tools Lead </br>
+Kellum Inglin - Tools Lead </br>
 
 ## Tools and Materials
 

@@ -22,13 +22,13 @@ public class PlayerMovement : MonoBehaviour
             bool isRight = Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow);
 
             if (tileY < gridManager.Rows - 1 && isUp)
-                targetPosition += Vector3.forward * gridManager.GetSize();       // Move up
+                targetPosition += Vector3.forward * gridManager.GetTileSize();       // Move up
             else if (tileY > 0 && isDown)
-                targetPosition += Vector3.back * gridManager.GetSize();     // Move down
+                targetPosition += Vector3.back * gridManager.GetTileSize();     // Move down
             else if (tileX > 0 && isLeft)
-                targetPosition += Vector3.left * gridManager.GetSize();     // Move left
+                targetPosition += Vector3.left * gridManager.GetTileSize();     // Move left
             else if (tileX < gridManager.Columns - 1 && isRight)
-                targetPosition += Vector3.right * gridManager.GetSize();    // Move right
+                targetPosition += Vector3.right * gridManager.GetTileSize();    // Move right
 
             // If target position has changed, start moving
             if (targetPosition != transform.position)

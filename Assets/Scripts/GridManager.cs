@@ -39,7 +39,7 @@ public class GridManager : MonoBehaviour
     public float GetCoordinate(float coordinate) {
         return coordinate / TileSize;
     }
-    public float GetSize() {
+    public float GetTileSize() {
         return TileSize;
     }
 }

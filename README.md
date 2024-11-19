@@ -39,3 +39,13 @@ we've mainly been given the appropriate frameworks to begin with. We anticipate 
 parts of this project to be time management and communicating clearly on what each of us is
 developing.
 
+## How we satisfied the requirements
+
+## F0.a
+
+Implemented a separate GridManager class that is instantiated as a collection of Tiles. Tiles can be
+returned based on global position, which is translated to the corresponding grid position. Player
+movement is based on discrete units determined by Tile size, while their global position is restricted
+by the overall size of the grid.
+
+## F0.b

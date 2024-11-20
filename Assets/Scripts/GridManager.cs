@@ -10,6 +10,8 @@ public class GridManager : MonoBehaviour
     private void Start()
     {
         CreateGrid();
+        TimeManager timeManager = FindObjectOfType<TimeManager>();
+        timeManager.OnNextDay.AddListener(Randomize);
     }
     private void CreateGrid()
     {
@@ -36,10 +38,24 @@ public class GridManager : MonoBehaviour
         return null;
     }
 
-    public float GetCoordinate(float coordinate) {
+    public void Randomize()
+    {
+        for (int i = 0; i < Columns; i++)
+        {
+            for (int j = 0; j < Rows; j++)
+            {
+                Debug.Log(i + " " + j);
+                Debug.Log(Grid[i, j].SunLevel);
+            }
+        }
+    }
+
+    public float GetCoordinate(float coordinate)
+    {
         return coordinate / TileSize;
     }
-    public float GetTileSize() {
+    public float GetTileSize()
+    {
         return TileSize;
     }
 }
@@ -48,11 +64,13 @@ public class Tile
 {
     private int sunLevel;
     private int waterLevel;
-    public int SunLevel {
+    public int SunLevel
+    {
         get { return sunLevel; }
         set { sunLevel = value; }
     }
-    public int WaterLevel {
+    public int WaterLevel
+    {
         get { return waterLevel; }
         set { waterLevel = value; }
     }

@@ -1863,6 +1863,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: farm-21-barn
       objectReference: {fileID: 0}
+    - target: {fileID: 6420498884703818585, guid: 0f13dfda4f7124242875e5519d052549, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -14.16
+      objectReference: {fileID: 0}
+    - target: {fileID: 6420498884703818585, guid: 0f13dfda4f7124242875e5519d052549, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.07
+      objectReference: {fileID: 0}
     - target: {fileID: 7172638068897061735, guid: 0f13dfda4f7124242875e5519d052549, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3.7526627

@@ -46,6 +46,16 @@ public class GridManager : MonoBehaviour
 
 public class Tile
 {
+    private int sunLevel;
+    private int waterLevel;
+    public int SunLevel {
+        get { return sunLevel; }
+        set { sunLevel = value; }
+    }
+    public int WaterLevel {
+        get { return waterLevel; }
+        set { waterLevel = value; }
+    }
     public Vector2 Position;
     public Tile(Vector2 position)
     {

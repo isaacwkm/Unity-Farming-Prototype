@@ -16,7 +16,7 @@ public class Plant : MonoBehaviour
 
     public void AdvanceGrowth()
     {
-        daysSinceLastGrowth++;
+        daysSinceLastGrowth++; // f0.f add more conditions for this line to be able to run (check sunlight and water)
 
         if (daysSinceLastGrowth >= daysPerStage && currentStage < growthStages.Length - 1)
         {

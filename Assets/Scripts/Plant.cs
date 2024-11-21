@@ -14,9 +14,14 @@ public class Plant : MonoBehaviour
     }
 
 
+    // Advance Growth runs every time a day is passed. The lines of code withing AdvanceGrowth() will determine
+    // if the plant gets to advance or be stagnant in growth.
     public void AdvanceGrowth()
     {
-        daysSinceLastGrowth++;
+        // Condition 1: Water level
+        // Condition 2: Sun level
+        // If conditions 1 and 2 are met, then below line may run
+        daysSinceLastGrowth++; // f0.f add more conditions for this line to be able to run (check sunlight and water)
 
         if (daysSinceLastGrowth >= daysPerStage && currentStage < growthStages.Length - 1)
         {

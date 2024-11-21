@@ -52,6 +52,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: farm-11-corn_growth0
       objectReference: {fileID: 0}
+    - target: {fileID: 8417321760913048704, guid: 4ba9bbb665b20704fbb27920da788a12, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -77,7 +81,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6618096170487173787, guid: 060597bd5a7ae2c479e1ef7a70daa06e, type: 3}
       propertyPath: m_Name
-      value: Corn Variant
+      value: Corn Plant Variant
       objectReference: {fileID: 0}
     - target: {fileID: 7263548326058956748, guid: 060597bd5a7ae2c479e1ef7a70daa06e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -93,7 +97,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7263548326058956748, guid: 060597bd5a7ae2c479e1ef7a70daa06e, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 7263548326058956748, guid: 060597bd5a7ae2c479e1ef7a70daa06e, type: 3}
       propertyPath: m_LocalRotation.x
@@ -101,7 +105,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7263548326058956748, guid: 060597bd5a7ae2c479e1ef7a70daa06e, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 7263548326058956748, guid: 060597bd5a7ae2c479e1ef7a70daa06e, type: 3}
       propertyPath: m_LocalRotation.z
@@ -113,7 +117,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7263548326058956748, guid: 060597bd5a7ae2c479e1ef7a70daa06e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: -90
       objectReference: {fileID: 0}
     - target: {fileID: 7263548326058956748, guid: 060597bd5a7ae2c479e1ef7a70daa06e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -234,6 +238,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: farm-30-corn_growth2
       objectReference: {fileID: 0}
+    - target: {fileID: 2953529700060748326, guid: 837387f74f91007409e54001a9f53ee9, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -260,6 +268,10 @@ PrefabInstance:
     - target: {fileID: 22365805352519075, guid: d898273ee03a06941865608dd05a8860, type: 3}
       propertyPath: m_Name
       value: farm-29-corn_growth1
+      objectReference: {fileID: 0}
+    - target: {fileID: 22365805352519075, guid: d898273ee03a06941865608dd05a8860, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7261937930225747596, guid: d898273ee03a06941865608dd05a8860, type: 3}
       propertyPath: m_LocalPosition.x
@@ -338,11 +350,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3302806875175594376, guid: 69b3bcca1a3c2bf478f66d39808c175d, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 3302806875175594376, guid: 69b3bcca1a3c2bf478f66d39808c175d, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 3302806875175594376, guid: 69b3bcca1a3c2bf478f66d39808c175d, type: 3}
       propertyPath: m_LocalRotation.y
@@ -354,7 +366,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3302806875175594376, guid: 69b3bcca1a3c2bf478f66d39808c175d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 3302806875175594376, guid: 69b3bcca1a3c2bf478f66d39808c175d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -394,6 +406,10 @@ PrefabInstance:
     - target: {fileID: 5096264270601553674, guid: 747c436de4170764bb8758e75616d2a1, type: 3}
       propertyPath: m_Name
       value: farm-32-corn_growth4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5096264270601553674, guid: 747c436de4170764bb8758e75616d2a1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5880482061156619334, guid: 747c436de4170764bb8758e75616d2a1, type: 3}
       propertyPath: m_LocalPosition.x
@@ -501,6 +517,10 @@ PrefabInstance:
     - target: {fileID: 6104668005903146010, guid: 9d6d428ef00528c48a56df89b7837b3f, type: 3}
       propertyPath: m_Name
       value: farm-31-corn_growth3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6104668005903146010, guid: 9d6d428ef00528c48a56df89b7837b3f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

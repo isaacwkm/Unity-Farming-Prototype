@@ -6,6 +6,7 @@ public class Plant : MonoBehaviour
     public int currentStage = 0;      // Current growth stage
     public int daysPerStage = 2;      // Days required to move to the next stage
     private int daysSinceLastGrowth = 0;
+    public float sunlight = 1f;       // Fertility level (0 = not fertile, 1 = fully fertile)
 
     private void Start()
     {

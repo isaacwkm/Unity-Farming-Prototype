@@ -2,15 +2,15 @@ using UnityEngine;
 
 public class GridManager : MonoBehaviour
 {
-    public int Rows = 3;
-    public int Columns = 3;
+    public int Rows = 10;
+    public int Columns = 10;
     readonly float TileSize = 2f;
     public Tile[,] Grid;
 
     private void Start()
     {
         CreateGrid();
-        
+
         TimeManager timeManager = FindObjectOfType<TimeManager>();
         timeManager.OnNextDay.AddListener(Randomize);
     }

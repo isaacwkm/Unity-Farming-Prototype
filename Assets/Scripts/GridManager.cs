@@ -10,6 +10,7 @@ public class GridManager : MonoBehaviour
     private void Start()
     {
         CreateGrid();
+        
         TimeManager timeManager = FindObjectOfType<TimeManager>();
         timeManager.OnNextDay.AddListener(Randomize);
     }

@@ -44,8 +44,14 @@ public class GridManager : MonoBehaviour
         {
             for (int j = 0; j < Rows; j++)
             {
-                Debug.Log(i + " " + j);
-                Debug.Log(Grid[i, j].SunLevel);
+                Grid[i, j].SunLevel = Mathf.FloorToInt(Random.Range(0, 10f));
+                int[] waterDelta = { -2, -1, 1, 2 };
+                int index = Mathf.FloorToInt(Random.Range(0, waterDelta.Length));
+                int newWaterLevel = Grid[i, j].WaterLevel + waterDelta[index];
+                if (0 <= newWaterLevel && newWaterLevel <= 5)
+                    Grid[i, j].WaterLevel = newWaterLevel;
+
+                Debug.Log(Grid[i, j].SunLevel + " " + Grid[i, j].WaterLevel);
             }
         }
     }

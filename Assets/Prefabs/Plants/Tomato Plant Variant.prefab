@@ -52,6 +52,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: farm-55-tomato_growth4
       objectReference: {fileID: 0}
+    - target: {fileID: 7493353767697744873, guid: fec5c3d23e0ee114e99e6d2897d8e36e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -78,6 +82,10 @@ PrefabInstance:
     - target: {fileID: 1178627511741709130, guid: 1ffaeaa237ef476479cadcca90ce518a, type: 3}
       propertyPath: m_Name
       value: farm-27-tomato_growth2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1178627511741709130, guid: 1ffaeaa237ef476479cadcca90ce518a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8031591385016236071, guid: 1ffaeaa237ef476479cadcca90ce518a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -146,6 +154,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: farm-28-tomato_growth3
       objectReference: {fileID: 0}
+    - target: {fileID: 4105112207331200296, guid: 99799958630d51a48b975354eb61857d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9166234428912765553, guid: 99799958630d51a48b975354eb61857d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -212,6 +224,10 @@ PrefabInstance:
     - target: {fileID: 3625628217853652245, guid: 65aba2e5c1520174687f61d84210e2de, type: 3}
       propertyPath: m_Name
       value: farm-26-tomato_growth1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3625628217853652245, guid: 65aba2e5c1520174687f61d84210e2de, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8231113650114508140, guid: 65aba2e5c1520174687f61d84210e2de, type: 3}
       propertyPath: m_LocalPosition.x
@@ -294,7 +310,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7263548326058956748, guid: 060597bd5a7ae2c479e1ef7a70daa06e, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 7263548326058956748, guid: 060597bd5a7ae2c479e1ef7a70daa06e, type: 3}
       propertyPath: m_LocalRotation.x
@@ -302,7 +318,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7263548326058956748, guid: 060597bd5a7ae2c479e1ef7a70daa06e, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 7263548326058956748, guid: 060597bd5a7ae2c479e1ef7a70daa06e, type: 3}
       propertyPath: m_LocalRotation.z
@@ -314,7 +330,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7263548326058956748, guid: 060597bd5a7ae2c479e1ef7a70daa06e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: -90
       objectReference: {fileID: 0}
     - target: {fileID: 7263548326058956748, guid: 060597bd5a7ae2c479e1ef7a70daa06e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -340,6 +356,10 @@ PrefabInstance:
       propertyPath: growthStages.Array.data[5]
       value: 
       objectReference: {fileID: 8955108635566643306}
+    - target: {fileID: 8649792990012206380, guid: 060597bd5a7ae2c479e1ef7a70daa06e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 7145568622828334417, guid: 060597bd5a7ae2c479e1ef7a70daa06e, type: 3}

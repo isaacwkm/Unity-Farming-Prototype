@@ -16,7 +16,7 @@ public class TimeManager : MonoBehaviour
     public void NextDay()
     {
         currentDay++;
-        OnNextDay.Invoke();
+        OnNextDay.Invoke(); // This is what invokes the OnNextDay event, and causes all other commands that listen in on this event to run.
         UpdateDayText();
     }
 

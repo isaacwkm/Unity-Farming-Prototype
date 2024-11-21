@@ -1377,6 +1377,8 @@ MonoBehaviour:
   OnNextDay:
     m_PersistentCalls:
       m_Calls: []
+  lightAnimator: {fileID: 1257468559}
+  nextDayCooldown: 1
 --- !u!1 &1210518195
 GameObject:
   m_ObjectHideFlags: 0
@@ -1492,6 +1494,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1257468558}
   - component: {fileID: 1257468557}
+  - component: {fileID: 1257468559}
   m_Layer: 0
   m_Name: Directional Light
   m_TagString: Untagged
@@ -1569,13 +1572,34 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1257468556}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
+  m_LocalRotation: {x: 0.29883623, y: -0.64085644, z: 0.29883623, w: 0.64085644}
   m_LocalPosition: {x: 0, y: 3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+  m_LocalEulerAnglesHint: {x: 50, y: -90, z: 0}
+--- !u!95 &1257468559
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1257468556}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 70ab9fde00aeeec4f8a899abec62643d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1554440466
 GameObject:
   m_ObjectHideFlags: 0

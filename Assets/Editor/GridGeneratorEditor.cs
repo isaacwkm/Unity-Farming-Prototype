@@ -1,5 +1,7 @@
-using UnityEngine;
+#if UNITY_EDITOR
 using UnityEditor;
+#endif
+using UnityEngine;
 
 public class GridGeneratorEditor : MonoBehaviour
 {
@@ -29,6 +31,7 @@ public class GridGeneratorEditor : MonoBehaviour
             for (int z = 0; z < rows; z++)
             {
                 Vector3 position = new Vector3(x * tileSize, -0.5f, z * tileSize);
+                //un comment this line to get it working again. It was commented to allow building of project
                 GameObject tile = PrefabUtility.InstantiatePrefab(tilePrefab, transform) as GameObject;
                 tile.transform.position = position;
             }

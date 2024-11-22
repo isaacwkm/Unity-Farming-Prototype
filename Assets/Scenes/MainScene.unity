@@ -1270,7 +1270,7 @@ GameObject:
   - component: {fileID: 271296086}
   - component: {fileID: 271296087}
   m_Layer: 0
-  m_Name: Crops
+  m_Name: ObjectivesManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

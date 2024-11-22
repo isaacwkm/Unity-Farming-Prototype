@@ -50,7 +50,7 @@ public class PlayScenarioManager : MonoBehaviour
             {
                 Debug.LogWarning("No panel assigned in " + gameObject.name);
             }
-
+    
         }
     }
 }

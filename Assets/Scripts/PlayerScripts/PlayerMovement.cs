@@ -38,6 +38,7 @@ public class PlayerMovement : MonoBehaviour
 
     private System.Collections.IEnumerator MoveToPosition(Vector3 targetPosition)
     {
+        ObjectivesManager.Instance.CompleteObjective(0); // Completes objective 0: Move around with WASD keys
         isMoving = true;
 
         // Smoothly move the player to the target position
@@ -50,5 +51,6 @@ public class PlayerMovement : MonoBehaviour
         // Snap to target position (to avoid floating-point inaccuracies)
         transform.position = targetPosition;
         isMoving = false;
+        
     }
 }

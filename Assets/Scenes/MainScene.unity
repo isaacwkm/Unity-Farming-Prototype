@@ -1194,7 +1194,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfeceee04a830422dbd15b2535a77e47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetFullyGrownPlants: 3
+  targetFullyGrownPlants: 10
   OnScenarioComplete:
     m_PersistentCalls:
       m_Calls:

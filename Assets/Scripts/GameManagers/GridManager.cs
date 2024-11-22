@@ -74,6 +74,7 @@ public class GridManager : MonoBehaviour
 
 public class Tile
 {
+    public bool isSowed = false;
     private int sunLevel;
     private int waterLevel;
     public int SunLevel

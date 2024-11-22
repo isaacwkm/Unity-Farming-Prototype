@@ -41,20 +41,21 @@ public class GridManager : MonoBehaviour
 
     public void Randomize()
     {
+        int sunLevel = Random.Range(0, 10);
         for (int i = 0; i < Columns; i++)
         {
             for (int j = 0; j < Rows; j++)
             {
-                Grid[i, j].SunLevel = Random.Range(0, 10);
+                Grid[i, j].SunLevel = sunLevel;
                 int[] waterDelta = { -2, -1, 0, 1, 2 };
                 int index = Random.Range(0, waterDelta.Length);
                 Grid[i, j].WaterLevel += waterDelta[index];
                 if (Grid[i, j].WaterLevel < 0)
                     Grid[i, j].WaterLevel = 0;
-                if (Grid[i, j].WaterLevel > 5)
-                    Grid[i, j].WaterLevel = 5;
+                if (Grid[i, j].WaterLevel > 3)
+                    Grid[i, j].WaterLevel = 3;
                 
-                Debug.Log(Grid[i, j].SunLevel + " " + Grid[i, j].WaterLevel);
+                //Debug.Log(Grid[i, j].SunLevel + " " + Grid[i, j].WaterLevel);
             }
         }
     }

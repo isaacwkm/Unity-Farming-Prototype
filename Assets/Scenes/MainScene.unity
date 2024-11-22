@@ -1633,10 +1633,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectives:
-  - {fileID: 2097117814}
-  - {fileID: 641871159}
-  - {fileID: 554842441}
-  - {fileID: 1784296717}
+  - {fileID: 1650457483}
+  - {fileID: 551108889}
+  - {fileID: 677922580}
+  - {fileID: 1243562270}
 --- !u!1001 &275267307
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1773,7 +1773,7 @@ GameObject:
   - component: {fileID: 275515285}
   - component: {fileID: 275515284}
   m_Layer: 5
-  m_Name: Green Checkmark
+  m_Name: Checkmark
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2880,7 +2880,7 @@ GameObject:
   - component: {fileID: 450597438}
   - component: {fileID: 450597437}
   m_Layer: 5
-  m_Name: Green Strikethrough
+  m_Name: Strikethrough
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3238,7 +3238,7 @@ GameObject:
   m_Component:
   - component: {fileID: 551108890}
   m_Layer: 5
-  m_Name: Objective (2)
+  m_Name: Objective (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4119,7 +4119,7 @@ GameObject:
   m_Component:
   - component: {fileID: 677922581}
   m_Layer: 5
-  m_Name: Objective (3)
+  m_Name: Objective (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6778,7 +6778,7 @@ GameObject:
   - component: {fileID: 1170136292}
   - component: {fileID: 1170136291}
   m_Layer: 5
-  m_Name: Green Strikethrough
+  m_Name: Strikethrough
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7152,7 +7152,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1243562271}
   m_Layer: 5
-  m_Name: Objective (4)
+  m_Name: Objective (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9906,7 +9906,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1650457484}
   m_Layer: 5
-  m_Name: Objective (1)
+  m_Name: Objective (0)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11597,7 +11597,7 @@ GameObject:
   - component: {fileID: 1976991089}
   - component: {fileID: 1976991088}
   m_Layer: 5
-  m_Name: Green Checkmark
+  m_Name: Checkmark
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

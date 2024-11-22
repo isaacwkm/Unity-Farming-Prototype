@@ -7,6 +7,7 @@ public class PlayScenarioManager : MonoBehaviour
 {
     public int targetFullyGrownPlants = 2; // Number of fully grown plants needed to complete the scenario
     public UnityEvent OnScenarioComplete;  // Event triggered when the scenario is complete
+    [SerializeField] private GameObject panelToActivate; // Assign the panel in the Inspector
 
     private void Start()
     {
@@ -39,8 +40,17 @@ public class PlayScenarioManager : MonoBehaviour
         // Check if the scenario condition is met
         if (fullyGrownPlantsCount >= targetFullyGrownPlants)
         {
-            Debug.Log("Play scenario completed!");
-            OnScenarioComplete?.Invoke();
+            if (panelToActivate != null)
+            {
+                panelToActivate.SetActive(true);
+                Debug.Log("Play scenario completed!");
+                OnScenarioComplete?.Invoke();
+            }
+            else
+            {
+                Debug.LogWarning("No panel assigned in " + gameObject.name);
+            }
+
         }
     }
 }

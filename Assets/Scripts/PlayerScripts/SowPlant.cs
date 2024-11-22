@@ -29,7 +29,7 @@ public class SowPlant : MonoBehaviour
         Quaternion rotation = Quaternion.Euler(0f, -90f, 0f);
         if (selectedTile != null)
         {
-            Instantiate(plantPrefab, position, rotation);
+            selectedTile.plantOnTile = Instantiate(plantPrefab, position, rotation);
             plantMenuUI.SetActive(false);
             isUIOpen = false;
             selectedTile = null;

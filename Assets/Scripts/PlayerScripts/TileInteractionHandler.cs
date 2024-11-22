@@ -20,7 +20,7 @@ public class TileInteractionHandler : MonoBehaviour
         if (SowPlant.Instance.isUIOpen) return;
         DetectObjectUnderMouse();
         if (tileRenderer && Input.GetMouseButtonDown(0))
-            OpenMenu();
+            InteractWithTile();
     }
     private void DetectObjectUnderMouse()
     {
@@ -53,7 +53,7 @@ public class TileInteractionHandler : MonoBehaviour
             previousRenderer.material.color = originalColor;
     }
 
-    private void OpenMenu() {
+    private void InteractWithTile() {
         Tile tile = gridManager.GetTileAt(tileRenderer.transform.position);
 
         bool nearPlayerLeft = tile.Position.x >= transform.position.x - tileDistance;
@@ -65,6 +65,10 @@ public class TileInteractionHandler : MonoBehaviour
         if (!tile.isSowed && nearPlayer) {
             SowPlant.Instance.ShowPlantMenu(tile);
             tile.isSowed = true;
+        }
+        else if (tile.isSowed && nearPlayer){
+            Destroy(tile.plantOnTile);
+            tile.isSowed = false;
         }
     }
 }

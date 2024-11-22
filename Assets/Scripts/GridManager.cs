@@ -47,7 +47,9 @@ public class GridManager : MonoBehaviour
             for (int j = 0; j < Rows; j++)
             {
                 Grid[i, j].SunLevel = sunLevel;
-                int[] waterDelta = { -2, -1, 0, 1, 2 };
+                // waterDelta probability: Think of it as roulette/lottery, a random value is drawn and more identical numbers means its more likely to happen.
+                int[] waterDelta = {    -1, 0, 0, 0, 0, 
+                                        0, 0, 0, 1, 1 };
                 int index = Random.Range(0, waterDelta.Length);
                 Grid[i, j].WaterLevel += waterDelta[index];
                 if (Grid[i, j].WaterLevel < 0)

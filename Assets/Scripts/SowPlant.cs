@@ -23,7 +23,7 @@ public class SowPlant : MonoBehaviour
 
     public void PlantSelected(GameObject plantPrefab)
     {
-        Vector3 position = new(selectedTile.Position.x, -0.5f , selectedTile.Position.y);
+        Vector3 position = new(selectedTile.Position.x, 0.5f , selectedTile.Position.y);
         if (selectedTile != null)
         {
             Instantiate(plantPrefab, position, Quaternion.identity);

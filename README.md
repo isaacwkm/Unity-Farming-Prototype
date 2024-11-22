@@ -57,6 +57,13 @@ Implemented a separate TimeManager class that increments a day counter and adds 
 advancing time. The observer pattern is used to allow components to listen for the "OnNextDay" event,
 which is invoked whenever time is advanced.
 
+## F0.c
+
+Rendered tiles are generated in the scene according to the base grid layout. A tile interaction script is
+attached to the player character that uses raycasting to return the tile that is currently moused over.
+A UI menu that allows players to sow three different kinds of plants on that tile will show up when
+"Mouse0" is clicked.
+
 ## F0.d
 
 Tiles have attributes for sun and water levels. These get randomized whenever time is advanced by having

@@ -1042,7 +1042,11 @@ PrefabInstance:
       value: Corn Plant Variant
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 6354359563581421117, guid: 78c41ea482c2e234b934422136233492, type: 3}
+    - {fileID: 8156296460301905460, guid: 78c41ea482c2e234b934422136233492, type: 3}
+    - {fileID: 3466076331406723276, guid: 78c41ea482c2e234b934422136233492, type: 3}
+    - {fileID: 1409446402434630742, guid: 78c41ea482c2e234b934422136233492, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 78c41ea482c2e234b934422136233492, type: 3}
@@ -2857,7 +2861,11 @@ PrefabInstance:
       value: Tomato Plant Variant
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 1006804229315026159, guid: 60a3620367bd12c4fad85f7b0ba6aaa4, type: 3}
+    - {fileID: 2659137179814233318, guid: 60a3620367bd12c4fad85f7b0ba6aaa4, type: 3}
+    - {fileID: 7335837439328363038, guid: 60a3620367bd12c4fad85f7b0ba6aaa4, type: 3}
+    - {fileID: 5068950152364895876, guid: 60a3620367bd12c4fad85f7b0ba6aaa4, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 60a3620367bd12c4fad85f7b0ba6aaa4, type: 3}
@@ -8150,6 +8158,63 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6321036000724188218, guid: d0bedab00a7e4f04da1512ccf3c0df34, type: 3}
   m_PrefabInstance: {fileID: 452166901}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1598604530
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1485337678300153538, guid: 5918ec21c064f70488ae406893e4d054, type: 3}
+      propertyPath: m_Name
+      value: Carrot Plant Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 3137187528306049941, guid: 5918ec21c064f70488ae406893e4d054, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 6.052517
+      objectReference: {fileID: 0}
+    - target: {fileID: 3137187528306049941, guid: 5918ec21c064f70488ae406893e4d054, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.100000046
+      objectReference: {fileID: 0}
+    - target: {fileID: 3137187528306049941, guid: 5918ec21c064f70488ae406893e4d054, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3137187528306049941, guid: 5918ec21c064f70488ae406893e4d054, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 3137187528306049941, guid: 5918ec21c064f70488ae406893e4d054, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3137187528306049941, guid: 5918ec21c064f70488ae406893e4d054, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 3137187528306049941, guid: 5918ec21c064f70488ae406893e4d054, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3137187528306049941, guid: 5918ec21c064f70488ae406893e4d054, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3137187528306049941, guid: 5918ec21c064f70488ae406893e4d054, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 3137187528306049941, guid: 5918ec21c064f70488ae406893e4d054, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5918ec21c064f70488ae406893e4d054, type: 3}
 --- !u!4 &1614909952 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6321036000724188218, guid: d0bedab00a7e4f04da1512ccf3c0df34, type: 3}
@@ -10651,3 +10716,4 @@ SceneRoots:
   - {fileID: 224867071}
   - {fileID: 1633441583}
   - {fileID: 271296086}
+  - {fileID: 1598604530}

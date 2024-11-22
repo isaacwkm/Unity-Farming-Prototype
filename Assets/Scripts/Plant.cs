@@ -5,10 +5,10 @@ public class Plant : MonoBehaviour
     public GameObject[] growthStages; // Array of growth stage models
     public int currentStage = 0;      // Current growth stage
     public int daysPerStage = 2;      // Days required to move to the next stage
+    public int minSun = 2;
+    public int minWater = 2;
     private int daysGrowingSinceLastStage = 0;
     private int ageDays = 0;          // Keeps track of the age of a plant
-    private int minSun = 2;
-    private int minWater = 2;
     private GridManager gridManager;
 
     private void Start()

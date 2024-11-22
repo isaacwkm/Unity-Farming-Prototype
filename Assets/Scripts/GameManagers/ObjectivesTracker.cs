@@ -70,11 +70,16 @@ public class ObjectivesManager : MonoBehaviour
 
     private void SetObjectiveActive(int index, bool isActive)
     {
-        GameObject objective = objectives[index];
-        Transform bodyText = objective.transform.Find("Body");
+
         if (index >= 0 && index < objectives.Length)
         {
-            bodyText.gameObject.SetActive(isActive);
+            GameObject objective = objectives[index];
+            Transform checkmark = objective.transform.Find("Checkmark");
+            Transform strikethrough = objective.transform.Find("Strikethrough");
+
+            objective.SetActive(isActive);
+            if (checkmark) checkmark.gameObject.SetActive(false);
+            if (strikethrough) strikethrough.gameObject.SetActive(false);
         }
     }
 }

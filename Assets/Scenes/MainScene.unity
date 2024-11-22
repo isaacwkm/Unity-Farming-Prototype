@@ -2220,7 +2220,7 @@ GameObject:
   - component: {fileID: 363062236}
   - component: {fileID: 363062235}
   m_Layer: 5
-  m_Name: Green Strikethrough
+  m_Name: Strikethrough
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10194,7 +10194,7 @@ GameObject:
   - component: {fileID: 1735810595}
   - component: {fileID: 1735810594}
   m_Layer: 5
-  m_Name: Green Checkmark
+  m_Name: Checkmark
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

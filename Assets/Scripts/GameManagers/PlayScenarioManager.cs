@@ -42,6 +42,7 @@ public class PlayScenarioManager : MonoBehaviour
         {
             if (panelToActivate != null)
             {
+                ObjectivesManager.Instance.CompleteObjective(3);
                 panelToActivate.SetActive(true);
                 Debug.Log("Play scenario completed!");
                 OnScenarioComplete?.Invoke();

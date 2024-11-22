@@ -31,12 +31,17 @@ public class ObjectivesManager : MonoBehaviour
 
     public void CompleteObjective(int objectiveIndex)
     {
-        if (objectiveIndex != currentObjectiveIndex) return;
+        Debug.Log("Signal Received for Complete Objective: " + objectiveIndex);
+        Debug.Log("Current Objective: " + currentObjectiveIndex);
+
+        if (objectiveIndex != currentObjectiveIndex) return; // Returns if the signal received doesn't match the current active objective
 
         // Mark the current objective as complete and show the checkmark/strikethrough
         if (currentObjectiveIndex < objectives.Length)
         {
-            StartCoroutine(AnimateObjectiveCompletion(currentObjectiveIndex));
+            currentObjectiveIndex++;
+            Debug.Log("Objective complete " + objectiveIndex);
+            StartCoroutine(AnimateObjectiveCompletion(objectiveIndex));
         }
     }
 
@@ -57,14 +62,14 @@ public class ObjectivesManager : MonoBehaviour
         if (checkmark) checkmark.gameObject.SetActive(false);
         if (strikethrough) strikethrough.gameObject.SetActive(false);
 
-        // Move to the next objective
-        currentObjectiveIndex++;
-
         // Deactivate the current objective and activate the next one
         if (currentObjectiveIndex < objectives.Length)
         {
             SetObjectiveActive(index, false); // Deactivate the current objective
             SetObjectiveActive(currentObjectiveIndex, true); // Activate the next objective
+        }
+        else if (currentObjectiveIndex == objectives.Length){ // For the last element
+            SetObjectiveActive(index, false); // Deactivate the current objective
         }
     }
 
@@ -74,10 +79,12 @@ public class ObjectivesManager : MonoBehaviour
         if (index >= 0 && index < objectives.Length)
         {
             GameObject objective = objectives[index];
+            Transform bodyText = objective.transform.Find("Body");
             Transform checkmark = objective.transform.Find("Checkmark");
             Transform strikethrough = objective.transform.Find("Strikethrough");
 
             objective.SetActive(isActive);
+            if (bodyText) bodyText.gameObject.SetActive(true);
             if (checkmark) checkmark.gameObject.SetActive(false);
             if (strikethrough) strikethrough.gameObject.SetActive(false);
         }

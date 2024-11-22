@@ -20,7 +20,7 @@ public class TimeManager : MonoBehaviour
     public void NextDay()
     {
         if (isCooldown) return;
-
+        
         // Trigger the light animation
         lightAnimator.SetTrigger("StartDayCycle");
 
@@ -33,6 +33,9 @@ public class TimeManager : MonoBehaviour
         currentDay++;
         OnNextDay.Invoke(); // This is what invokes the OnNextDay event, and causes all other commands that listen in on this event to run.
         UpdateDayText();
+
+        // Objective
+        ObjectivesManager.Instance.CompleteObjective(2);
     }
 
     private IEnumerator Cooldown()

@@ -7,6 +7,7 @@ public class SowPlant : MonoBehaviour
 
     public GameObject plantMenuUI; // Reference to the plant selection UI
     private Tile selectedTile;
+    public bool isUIOpen = false;
 
     private void Awake()
     {
@@ -18,16 +19,19 @@ public class SowPlant : MonoBehaviour
     {
         selectedTile = tile;
         plantMenuUI.SetActive(true);
+        isUIOpen = true;
         // Optionally, position the menu near the tile - potential feature when I have time - Isaac
     }
 
     public void PlantSelected(GameObject plantPrefab)
     {
         Vector3 position = new(selectedTile.Position.x, 0.5f , selectedTile.Position.y);
+        Quaternion rotation = Quaternion.Euler(0f, -90f, 0f);
         if (selectedTile != null)
         {
-            Instantiate(plantPrefab, position, Quaternion.identity);
+            Instantiate(plantPrefab, position, rotation);
             plantMenuUI.SetActive(false);
+            isUIOpen = false;
             selectedTile = null;
         }
     }

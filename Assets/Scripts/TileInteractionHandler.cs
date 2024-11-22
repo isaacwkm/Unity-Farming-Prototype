@@ -6,6 +6,7 @@ public class TileInteractionHandler : MonoBehaviour
     private Color originalColor;
     public Color highlightColor = Color.yellow;
     private GridManager gridManager;
+    private bool uiOpen = false;
 
     private void Start()
     {
@@ -16,6 +17,8 @@ public class TileInteractionHandler : MonoBehaviour
 
     private void OnMouseEnter()
     {
+        uiOpen = SowPlant.Instance.isUIOpen;
+        if (uiOpen == true) return;
         tileRenderer.material.color = highlightColor;
     }
 
@@ -26,6 +29,8 @@ public class TileInteractionHandler : MonoBehaviour
 
     private void OnMouseDown()
     {
+        uiOpen = SowPlant.Instance.isUIOpen;
+        if (uiOpen == true) return;
         Tile tile = gridManager.GetTileAt(tileRenderer.transform.position);
         SowPlant.Instance.ShowPlantMenu(tile);
     }

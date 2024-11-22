@@ -14,7 +14,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1528471482348540688, guid: fec5c3d23e0ee114e99e6d2897d8e36e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.1
       objectReference: {fileID: 0}
     - target: {fileID: 1528471482348540688, guid: fec5c3d23e0ee114e99e6d2897d8e36e, type: 3}
       propertyPath: m_LocalPosition.z
@@ -93,7 +93,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8031591385016236071, guid: 1ffaeaa237ef476479cadcca90ce518a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.1
       objectReference: {fileID: 0}
     - target: {fileID: 8031591385016236071, guid: 1ffaeaa237ef476479cadcca90ce518a, type: 3}
       propertyPath: m_LocalPosition.z
@@ -164,7 +164,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9166234428912765553, guid: 99799958630d51a48b975354eb61857d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.1
       objectReference: {fileID: 0}
     - target: {fileID: 9166234428912765553, guid: 99799958630d51a48b975354eb61857d, type: 3}
       propertyPath: m_LocalPosition.z
@@ -235,7 +235,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8231113650114508140, guid: 65aba2e5c1520174687f61d84210e2de, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.1
       objectReference: {fileID: 0}
     - target: {fileID: 8231113650114508140, guid: 65aba2e5c1520174687f61d84210e2de, type: 3}
       propertyPath: m_LocalPosition.z
@@ -292,6 +292,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3492987306237372663, guid: 060597bd5a7ae2c479e1ef7a70daa06e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 6618096170487173787, guid: 060597bd5a7ae2c479e1ef7a70daa06e, type: 3}
       propertyPath: m_Name
       value: Tomato Plant Variant

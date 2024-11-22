@@ -55,12 +55,16 @@ public class TileInteractionHandler : MonoBehaviour
 
     private void OpenMenu() {
         Tile tile = gridManager.GetTileAt(tileRenderer.transform.position);
-        
+
         bool nearPlayerLeft = tile.Position.x >= transform.position.x - tileDistance;
         bool nearPlayerRight = tile.Position.x <= transform.position.x + tileDistance;
         bool nearPlayerUp = tile.Position.y <= transform.position.z + tileDistance;
         bool nearPlayerDown = tile.Position.y >= transform.position.z - tileDistance;
-        if (nearPlayerLeft && nearPlayerRight && nearPlayerUp && nearPlayerDown)
+        bool nearPlayer = nearPlayerLeft && nearPlayerRight && nearPlayerUp && nearPlayerDown;
+
+        if (!tile.isSowed && nearPlayer) {
             SowPlant.Instance.ShowPlantMenu(tile);
+            tile.isSowed = true;
+        }
     }
 }

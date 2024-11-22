@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class SowPlant : MonoBehaviour
@@ -22,6 +23,7 @@ public class SowPlant : MonoBehaviour
 
     public void PlantSelected(GameObject plantPrefab)
     {
+        //Vector3 selectedTileCoords = [];
         if (selectedTile != null)
         {
             Instantiate(plantPrefab, selectedTile.Position, Quaternion.identity);

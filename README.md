@@ -62,7 +62,8 @@ which is invoked whenever time is advanced.
 Rendered tiles are generated in the scene according to the base grid layout. A tile interaction script is
 attached to the player character that uses raycasting to return the tile that is currently moused over.
 A UI menu that allows players to sow three different kinds of plants on that tile will show up when
-"Mouse0" is clicked.
+"Mouse0" is clicked. The player can then reap tiles that have plants sowed in them which simply destroys
+the prefab that is referenced in that tile.
 
 ## F0.d
 
@@ -74,3 +75,13 @@ a random value.
 ## F0.e
 
 ## F0.f
+
+All plants have a script attached to them that dictates when and how they grow. The various growth stages
+for each plant are stored as children under a parent prefab which serves as the initial in-game object for
+the plant. A check for plant growth is triggered when the "OnNextDay" event is invoked from the TimeManager.
+If the conditions for that plant based on tile-specific data are met, the plant will update to the next
+prefab in its stored list of stages.
+
+## F0.g
+
+## Reflection

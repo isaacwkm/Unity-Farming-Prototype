@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6321036000724188218}
   - component: {fileID: 5247003872200836649}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: farm_soil
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -53,9 +53,6 @@ MonoBehaviour:
   - {fileID: 933726605367494460}
   - {fileID: 4868837043524380473}
   - {fileID: 8451727847193831482}
-  currentStage: 0
-  waterLevel: 5
-  waterLevelThreshold: 10
   canPlant: 1
 --- !u!1001 &1410513826811261028
 PrefabInstance:
@@ -68,6 +65,10 @@ PrefabInstance:
     - target: {fileID: 5765367992583198557, guid: 58b797876feb0664783251cc478e945d, type: 3}
       propertyPath: m_Name
       value: farm_soil2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5765367992583198557, guid: 58b797876feb0664783251cc478e945d, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5765367992583198557, guid: 58b797876feb0664783251cc478e945d, type: 3}
       propertyPath: m_IsActive
@@ -141,6 +142,10 @@ PrefabInstance:
       value: farm_soil3
       objectReference: {fileID: 0}
     - target: {fileID: 5420002240082894074, guid: ea6f4392fb9782242b3090d2975b174a, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5420002240082894074, guid: ea6f4392fb9782242b3090d2975b174a, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
@@ -210,6 +215,10 @@ PrefabInstance:
     - target: {fileID: 5509838275187018500, guid: c5e624d8aaa7b6f4c910c606d3a4ac67, type: 3}
       propertyPath: m_Name
       value: farm_soil0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5509838275187018500, guid: c5e624d8aaa7b6f4c910c606d3a4ac67, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8196891487523028436, guid: c5e624d8aaa7b6f4c910c606d3a4ac67, type: 3}
       propertyPath: m_LocalPosition.x
@@ -317,6 +326,10 @@ PrefabInstance:
     - target: {fileID: 7875409231235457967, guid: c934517b892173f418e82563abc27212, type: 3}
       propertyPath: m_Name
       value: farm_soil1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7875409231235457967, guid: c934517b892173f418e82563abc27212, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7875409231235457967, guid: c934517b892173f418e82563abc27212, type: 3}
       propertyPath: m_IsActive

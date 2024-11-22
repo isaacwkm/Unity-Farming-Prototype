@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 3203809094938701725}
   - component: {fileID: 2670059728050376915}
   - component: {fileID: 1068479947292989145}
-  - component: {fileID: -2051161955002348411}
   m_Layer: 0
   m_Name: farm_soil3
   m_TagString: Untagged
@@ -106,16 +105,3 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &-2051161955002348411
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5420002240082894074}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c231c5338ccd8ee47bc9649bb5d9ef08, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  highlightColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}

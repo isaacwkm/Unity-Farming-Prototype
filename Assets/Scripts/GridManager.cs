@@ -55,7 +55,7 @@ public class GridManager : MonoBehaviour
                 if (Grid[i, j].WaterLevel > 3)
                     Grid[i, j].WaterLevel = 3;
                 
-                Debug.Log(Grid[i, j].SunLevel + " " + Grid[i, j].WaterLevel);
+                //Debug.Log(Grid[i, j].SunLevel + " " + Grid[i, j].WaterLevel);
             }
         }
     }

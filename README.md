@@ -39,6 +39,8 @@ we've mainly been given the appropriate frameworks to begin with. We anticipate 
 parts of this project to be time management and communicating clearly on what each of us is
 developing.
 
+# Devlog Entry - 11/22/2024
+
 ## How we satisfied the requirements
 
 ## F0.a
@@ -46,6 +48,21 @@ developing.
 Implemented a separate GridManager class that is instantiated as a collection of Tiles. Tiles can be
 returned based on global position, which is translated to the corresponding grid position. Player
 movement is based on discrete units determined by Tile size, while their global position is restricted
-by the overall size of the grid.
+by the overall size of the grid. Tile-specific information can be returned through the GetTileAt
+function.
 
 ## F0.b
+
+Implemented a separate TimeManager class that increments a day counter and adds a basic UI for manually
+advancing time. The observer pattern is used to allow components to listen for the "OnNextDay" event,
+which is invoked whenever time is advanced.
+
+## F0.d
+
+Tiles have attributes for sun and water levels. These get randomized whenever time is advanced by having
+the GridManager listen for the "OnNextDay" event. Sun levels are assigned a random value within a certian
+range. Water levels are partially retained between events by having them either increment or decrement by
+a random value.
+
+## F0.e
+
